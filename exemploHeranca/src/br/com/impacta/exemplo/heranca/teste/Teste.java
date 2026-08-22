@@ -12,6 +12,8 @@ public class Teste {
 		//Utilizando o constructor super()
 		Programador p = new Programador("Java","Joaquim", 3.678);
 		
+		Programador p2 = new Programador();
+		
 		//Atribuindo ao programador os atributos herdados
 //		p.setNome("José");
 //		p.setSalario(2.567);
@@ -19,7 +21,7 @@ public class Teste {
 		
 		System.out.println("Dados do programador: ");
 		System.out.println("Nome      : " + p.getNome());
-		System.out.println("Salário   : R$ " + p.getSalario());
+		System.out.println("Salário   :"  + p.alteraSalario());
 		System.out.println("Linguagem : " + p.getLinguagem());
 
 	}

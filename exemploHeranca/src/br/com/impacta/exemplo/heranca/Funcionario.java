@@ -11,6 +11,11 @@ public class Funcionario {
 		this.salario = salario;
 	}
     
+    public Funcionario(String nome) {
+		super();
+		this.nome = nome;
+	}
+    
 	public Funcionario() {
 		super();
 		// TODO Auto-generated constructor stub

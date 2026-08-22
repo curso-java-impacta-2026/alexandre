@@ -21,6 +21,13 @@ public class Programador extends Funcionario{
 		this.linguagem = linguagem;
 	 }
 	 
+	 //Constructor Full SUPER(2)
+	 public Programador(String linguagem, String nome) {
+		super(nome);
+		this.linguagem = linguagem;
+	 }
+	 
+	 
 	 public String getLinguagem() {
 		 return linguagem;
 	 }
@@ -28,6 +35,20 @@ public class Programador extends Funcionario{
 	 public void setLinguagem(String linguagem) {
 		 this.linguagem = linguagem;
 	 }
+	 
+	 @Override
+	 public String getNome() {
+			return "Programador : " + super.getNome() ;
+	 }
+	 
+	 @Override
+	public double getSalario() {
+		return super.getSalario();
+	}
+	 
+	public String alteraSalario() {
+		return "R$ " + this.getSalario();
+	}
 	 	 
 	
 }
