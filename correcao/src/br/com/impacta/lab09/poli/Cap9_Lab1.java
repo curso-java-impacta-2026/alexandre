@@ -14,5 +14,7 @@ public class Cap9_Lab1 {
 		rafael.mostrarDados();
 		manuel.mostrarDados();
 		claudia.mostrarDados();
+				
+		
 	}
 }
