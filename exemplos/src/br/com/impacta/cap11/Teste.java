@@ -7,18 +7,20 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-//		ExemploThrows exth = new ExemploThrows();
-//		
-//		try {
-//			exth.metodo1();
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-
+		ExemploThrows exth = new ExemploThrows();
+		
+		try {
+			exth.metodo1();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
 		// A classe Scanner pertence ao Java Útil e é responsável por
 		// capturar a entrada de dados do usuário através do console.
-		Scanner scan = new Scanner(System.in);
+//		Scanner scan = new Scanner(System.in);
 
 		// Vamos preencher uma variável com o SCANNER
 
@@ -35,28 +37,28 @@ public class Teste {
 
 		// Criando uma calculadora simples:
 
-		int nr1 = 0;
-		int nr2 = 0;
-		boolean chave = true;
-
-		while (chave) {
-			try {
-				System.out.println("Digite o primeiro número da SOMA:");
-				nr1 = Integer.parseInt(scan.next());
-
-				System.out.println("Digite o segundo número da SOMA:");
-				nr2 = Integer.parseInt(scan.next());
-
-				System.out.println("O resultado da SOMA é : " + (nr1 + nr2));
-
-				chave = (nr1 + nr2) > 0 ? false : true;
-			} catch (InputMismatchException | NumberFormatException e) {
-				System.out.println("Digite apenas números!!");
-			}
-
-		}
-		
-		scan.close();
+//		int nr1 = 0;
+//		int nr2 = 0;
+//		boolean chave = true;
+//
+//		while (chave) {
+//			try {
+//				System.out.println("Digite o primeiro número da SOMA:");
+//				nr1 = Integer.parseInt(scan.next());
+//
+//				System.out.println("Digite o segundo número da SOMA:");
+//				nr2 = Integer.parseInt(scan.next());
+//
+//				System.out.println("O resultado da SOMA é : " + (nr1 + nr2));
+//
+//				chave = (nr1 + nr2) > 0 ? false : true;
+//			} catch (InputMismatchException | NumberFormatException e) {
+//				System.out.println("Digite apenas números!!");
+//			}
+//
+//		}
+//		
+//		scan.close();
 
 	}
 

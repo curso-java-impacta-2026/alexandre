@@ -3,6 +3,7 @@ package br.com.impacta.cap11;
 public class ExemploThrows {
 
     public void metodo1() throws Exception {
+    	    	
         try {
             metodo2();
         } catch (Exception e) {
