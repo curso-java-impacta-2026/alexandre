@@ -7,8 +7,9 @@ public class Corrida {
 		Piloto p1 = new Piloto("Sonic");
 		Piloto p2 = new Piloto("Tails");
 		
-		p2.start();
 		p1.start();
+		
+		p2.start();
 
 	}
 
