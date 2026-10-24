@@ -23,6 +23,7 @@ public class ExemploFiles {
             } else if (Files.isRegularFile(arquivo)) {
                 System.out.println("O item � um arquivo.");
             }
+            
 
             /* Exibe  */
             System.out.println(Files.size(arquivo));
