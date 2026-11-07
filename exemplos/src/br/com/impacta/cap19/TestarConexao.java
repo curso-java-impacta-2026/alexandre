@@ -7,7 +7,7 @@ public class TestarConexao {
 	private final static String url = "jdbc:mysql://localhost:3306/impacta";
 	
 	private final static String username = "root";
-	private final static String password = "impacta";
+	private final static String password = "root";
 	
 	private Connection con;
 	private Statement stmt;
