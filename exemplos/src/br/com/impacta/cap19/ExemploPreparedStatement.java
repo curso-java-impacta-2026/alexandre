@@ -8,7 +8,7 @@ public class ExemploPreparedStatement {
         
         try {
             Connection cn = DriverManager.getConnection(
-            		"jdbc:mysql://localhost:3306/impacta", "root", "root");
+            		"jdbc:mysql://localhost:3306/impacta", "root", "impacta1");
 
             PreparedStatement ps = cn.prepareStatement(
             		"INSERT INTO alunos VALUES (?, ?, ?)");
