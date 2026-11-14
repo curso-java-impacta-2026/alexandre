@@ -18,8 +18,8 @@ public class ImportarFilmesConsole {
 		
 		FilmeController controller = new FilmeController();
 		try {
-			controller.importarFilmes(pathFile);
-			System.out.println("...");
+//			controller.importarFilmes(pathFile);
+//			System.out.println("...");
 			System.out.println("Filmes importados com sucesso!");
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null,e.getMessage(),"Erro ocorrido",JOptionPane.ERROR_MESSAGE);

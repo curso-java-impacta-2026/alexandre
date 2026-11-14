@@ -31,8 +31,8 @@ public class CriarFilmeConsole {
 		
 		FilmeController controller = new FilmeController();
 		try {
-			controller.criarFilme(titulo, diretores, nota, duracao, ano, generos, votos, url);
-			System.out.println("...");
+//			controller.criarFilme(titulo, diretores, nota, duracao, ano, generos, votos, url);
+//			System.out.println("...");
 			System.out.println("Filme criado com sucesso!");
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null,e.getMessage(),"Erro ocorrido",JOptionPane.ERROR_MESSAGE);

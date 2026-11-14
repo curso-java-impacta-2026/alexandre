@@ -21,7 +21,7 @@ public class RemoverFilmeConsole {
 
 		FilmeController controller = new FilmeController();
 		try {
-			controller.remover(filme);
+//			controller.remover(filme);
 			System.out.println("...");
 			System.out.printf("Filme %s removido com sucesso!",titulo);
 		} catch (Exception e) {

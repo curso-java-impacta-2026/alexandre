@@ -26,8 +26,8 @@ public class ConsultarFilmeConsole {
 
 		FilmeController controller = new FilmeController();
 		try {
-			List<Filme> filmes = controller.consultarFilme(titulo, genero, anoDe, anoAte);
-			System.out.println("...");
+//			List<Filme> filmes = controller.consultarFilme(titulo, genero, anoDe, anoAte);
+//			System.out.println("...");
 			System.out.println("Filme consultado com sucesso!");
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null,e.getMessage(),"Erro ocorrido",JOptionPane.ERROR_MESSAGE);
