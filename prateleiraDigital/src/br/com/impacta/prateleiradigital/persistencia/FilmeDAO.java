@@ -37,10 +37,10 @@ public class FilmeDAO {
 				ps.setString(6, filme.getGeneros());
 				ps.setInt(7, filme.getNumVotos());
 				
-				if(filme.getUrl() == null) {
+				if(filme.getUrl().equals(null)) {
 					ps.setNull(8, Types.VARCHAR);
 				}else {
-					ps.setString(8, sql);
+					ps.setString(8, filme.getUrl());
 				}
 				
 				return ps.executeUpdate();
@@ -56,7 +56,7 @@ public class FilmeDAO {
 		
 		public List<Filme> select() throws SQLException {
 			
-			String sql = "SELECT titulo,diretores,nota,duracao,ano,"
+			String sql = "SELECT id ,titulo,diretores,nota,duracao,ano,"
 					+ "generos,numVotos,url FROM tb_filmes"
 					+ " ORDER BY titulo";
 			
@@ -80,6 +80,7 @@ public class FilmeDAO {
 						rs.getInt("numVotos"),
 						rs.getString("url")
 					);
+					filme.setId(rs.getInt("id"));
 					
 					filmes.add(filme);
 				}
